@@ -1,5 +1,6 @@
-import decode from 'jwt-decode'
 import { cookies } from 'next/headers'
+
+import decode from 'jwt-decode'
 
 interface User {
   sub: string

@@ -1,11 +1,14 @@
-import { EmptyMemories } from '@/components/EmptyMemories'
-import { api } from '@/lib/api'
-import ptBr from 'dayjs/locale/pt-br'
-import dayjs from 'dayjs'
+import { ArrowRight } from 'lucide-react'
+
 import { cookies } from 'next/headers'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+
+import { api } from '@/lib/api'
+import dayjs from 'dayjs'
+import ptBr from 'dayjs/locale/pt-br'
+
+import { EmptyMemories } from '@/components/EmptyMemories'
 
 dayjs.locale(ptBr)
 

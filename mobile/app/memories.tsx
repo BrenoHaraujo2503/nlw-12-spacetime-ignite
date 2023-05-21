@@ -1,13 +1,17 @@
-import { View, TouchableOpacity, ScrollView, Text, Image } from 'react-native'
-import Icon from '@expo/vector-icons/Feather'
-import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
-import { Link, useRouter } from 'expo-router'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import * as SecureStore from 'expo-secure-store'
 import { useEffect, useState } from 'react'
-import { api } from '../src/lib/api'
-import ptBr from 'dayjs/locale/pt-br'
+
+import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
+
+import Icon from '@expo/vector-icons/Feather'
 import dayjs from 'dayjs'
+import ptBr from 'dayjs/locale/pt-br'
+import { Link, useRouter } from 'expo-router'
+import * as SecureStore from 'expo-secure-store'
+
+import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
+
+import { api } from '../src/lib/api'
 
 dayjs.locale(ptBr)
 

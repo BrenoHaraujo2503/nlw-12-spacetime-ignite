@@ -1,19 +1,20 @@
-import { ImageBackground } from 'react-native'
-import { styled } from 'nativewind'
-import { StatusBar } from 'expo-status-bar'
-import * as SecureStore from 'expo-secure-store'
+import { useEffect, useState } from 'react'
 
+import { ImageBackground } from 'react-native'
+
+import { BaiJamjuree_700Bold } from '@expo-google-fonts/bai-jamjuree'
 import {
-  useFonts,
   Roboto_400Regular,
   Roboto_700Bold,
+  useFonts,
 } from '@expo-google-fonts/roboto'
-import { BaiJamjuree_700Bold } from '@expo-google-fonts/bai-jamjuree'
+import { SplashScreen, Stack } from 'expo-router'
+import * as SecureStore from 'expo-secure-store'
+import { StatusBar } from 'expo-status-bar'
+import { styled } from 'nativewind'
 
 import blurBg from '../src/assets/bg-blur.png'
 import Stripes from '../src/assets/stripes.svg'
-import { SplashScreen, Stack } from 'expo-router'
-import { useEffect, useState } from 'react'
 
 const StyledStripes = styled(Stripes)
 

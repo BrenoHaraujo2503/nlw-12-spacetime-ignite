@@ -1,11 +1,15 @@
 'use client'
 
-import { Camera } from 'lucide-react'
-import { MediaPicker } from './MediaPicker'
 import { FormEvent } from 'react'
-import Cookie from 'js-cookie'
-import { api } from '@/lib/api'
+
+import { Camera } from 'lucide-react'
+
 import { useRouter } from 'next/navigation'
+
+import { api } from '@/lib/api'
+import Cookie from 'js-cookie'
+
+import { MediaPicker } from './MediaPicker'
 
 export function NewMemoryForm() {
   const router = useRouter()

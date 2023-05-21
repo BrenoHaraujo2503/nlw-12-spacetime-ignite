@@ -1,11 +1,13 @@
 import { useEffect } from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
 
-import { useRouter } from 'expo-router'
+import { Text, TouchableOpacity, View } from 'react-native'
+
 import { makeRedirectUri, useAuthRequest } from 'expo-auth-session'
+import { useRouter } from 'expo-router'
 import * as SecureStore from 'expo-secure-store'
 
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
+
 import { api } from '../src/lib/api'
 
 const discovery = {
